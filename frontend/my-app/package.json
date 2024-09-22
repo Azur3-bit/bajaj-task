@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bajaj-task-ik5g.vercel.app", // Add this line
   "dependencies": {
     "axios": "^0.21.1",
     "react": "^17.0.2",

@@ -1,18 +1,13 @@
-const handleSubmit = async data => {
-  setJsonData(data);
-  try {
-    const response = await fetch(
-      `${process.env.REACT_APP_BACKEND_URL}/bfhl`,  // This should point to your backend
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      }
-    );
-    const result = await response.json();
-    setResponse(result);
-  } catch (error) {
-    console.error("Error:", error);
-    setResponse({ error: "Failed to fetch data from the API." });
-  }
+import React from "react";
+import BfhlData from "./components/BfhlData"; // Ensure this path is correct
+
+const App = () => {
+  return (
+    <div className="App">
+      <h1>Your App Title</h1>
+      <BfhlData />  // Ensure this is the component you want to display
+    </div>
+  );
 };
+
+export default App;
